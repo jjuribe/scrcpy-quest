@@ -8,10 +8,10 @@ android {
     defaultConfig {
         applicationId "org.cagnulein.android_remote"
         minSdkVersion 29
-        targetSdkVersion 32
-        versionCode 19
-        versionName "2.2"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        targetSdkVersion 34
+        versionCode 20
+        versionName "2.3.0-ui8.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 	    setProperty("archivesBaseName", "android_remote")
     }
     buildTypes {
@@ -26,10 +26,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
    // implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    //implementation 'com.github.MuntashirAkon:libadb-android:3.0.0'
-    implementation "androidx.annotation:annotation:1.7.1"
-    implementation 'org.bouncycastle:bcprov-jdk15to18:1.78'
-    implementation 'com.github.MuntashirAkon.spake2-java:android:2.0.0'
+     //implementation 'com.github.MuntashirAkon:libadb-android:3.0.0'
+     implementation "androidx.annotation:annotation:1.7.1"
+     implementation 'org.bouncycastle:bcprov-jdk15to18:1.78'
+     implementation 'com.github.MuntashirAkon.spake2-java:android:2.0.0'
 
     // Library to generate X509Certificate. You can also use BouncyCastle for
     // this. See example for use-case.
@@ -44,21 +44,21 @@ dependencies {
     // Use custom Conscrypt library. If you want to connect to a remote ADB
     // daemon instead of the device the app is currently running or do not want
     // to bypass hidden API, this is the recommended choice.
-    implementation 'org.conscrypt:conscrypt-android:2.5.2'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+     implementation 'org.conscrypt:conscrypt-android:2.5.2'
+     implementation 'androidx.appcompat:appcompat:1.6.1'
+     implementation 'com.google.android.material:material:1.11.0'
 
     // Library to generate X509Certificate. You can also use BouncyCastle for this.
-    implementation 'com.github.MuntashirAkon:sun-security-android:1.1'
+     implementation 'com.github.MuntashirAkon:sun-security-android:1.1'
 
     // Bypass hidden API if you want to use Android default conscrypt. It also requires additional steps.
     // See https://github.com/LSPosed/AndroidHiddenApiBypass to find out more about this.
     // Comment out the line below if you do not need this.
-    implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:4.3'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'org.khronos.openxr:openxr_loader_for_android:1.1.37'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+     implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:4.3'
+     testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test:runner:1.5.2'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+     implementation 'org.khronos.openxr:openxr_loader_for_android:1.1.37'
+     implementation 'com.squareup.okhttp3:okhttp:4.10.0'
 
 }
