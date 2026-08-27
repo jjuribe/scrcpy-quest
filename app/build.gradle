@@ -10,9 +10,9 @@ android {
         minSdkVersion 29
         targetSdkVersion 34
         versionCode 20
-        versionName "2.3.0-ui8.5"
+        versionName "2.3.0-quest-android14"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-	    setProperty("archivesBaseName", "android_remote")
+	    setProperty("archivesBaseName", "android_remote_quest")
     }
     buildTypes {
         release {
